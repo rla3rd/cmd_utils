@@ -1,0 +1,4 @@
+#!/bin/sh
+delim="$1"
+file="$2"
+sed "s/"$delim"/\t/g" "$file" | less -S
